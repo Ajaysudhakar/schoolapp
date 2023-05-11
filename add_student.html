@@ -5,15 +5,38 @@
         body {
             font-size: 24px;
             font-family: Arial, sans-serif;
+            padding: 20px;
         }
 
         h1 {
             font-size: 36px;
+            color: darkgreen;
+        }
+
+        .back-button {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .back-button a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff1a1a;
+            color: white;
+            text-decoration: none;
+        }
+
+        .back-button a:hover {
+            background-color: #e60000;
         }
 
         .form-container {
             max-width: 500px;
-            margin: 20px auto;
+            margin: 0 auto;
+            background-color: lightgreen;
+            padding: 20px;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
 
         .form-group {
@@ -24,18 +47,21 @@
             display: block;
             font-weight: bold;
             margin-bottom: 5px;
+            color: darkgreen;
         }
 
         .form-group input {
             width: 100%;
-            padding: 10px;
+            padding: 12px;
             font-size: 20px;
             border-radius: 4px;
             border: 1px solid #ddd;
+            box-sizing: border-box;
         }
 
         .submit-button {
             display: block;
+            margin-top: 20px;
             padding: 10px 20px;
             border: none;
             border-radius: 4px;
@@ -65,11 +91,26 @@
                 <input type="number" id="age" name="age" required>
             </div>
             <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender" required>
+            </div>
+            <div class="form-group">
                 <label for="major">Major:</label>
                 <input type="text" id="major" name="major" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" required>
+            </div>
+            <div class="form-group">
+                <label for="marks">Marks:</label>
+                <input type="number" id="marks" name="marks" required>
             </div>
             <button type="submit" class="submit-button">Submit</button>
         </form>
     </div>
+    <div class="back-button">
+        <a href="/">Back to Home</a>
+    </div>
 </body>
-</html>
+<html/>
